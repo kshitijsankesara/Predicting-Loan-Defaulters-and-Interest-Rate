@@ -27,22 +27,22 @@ For each of our models, we divided the data into three datasets i.e. Training da
 **ML Models used for Predicting Interest Rate:**
 
 **1. Linear Regression:** For our regression model, we first created various Dummy variables to transform our categorical variables. We used various methods for selecting features for our model like correlation values. We performed hyperparameter tuning and tried many different Linear Models to get the best model based on RMSE and R2 value.
-> Hyperparameter Used: Maximum Iterations
+> Hyperparameter Used: Maximum Iterations ; 
 > Evaluation Metrics: RMSE = 1.239 and R2 = 0.942
 
 **2. Decision Tree Regressor:** For our decision tree regressor model, we used a couple of hyperparameters. We again tried 4 models using different features and parameters and obtained our best model based on RMSE value.
-> Hyperparameter Used: Maximum Depth and Maximum Bins
+> Hyperparameter Used: Maximum Depth and Maximum Bins ; 
 > Evaluation Metrics: RMSE = 1.0003
 
 
 **ML Models used for Classifying Loan Defaulters:**
 
 **1. Logistic Regression:** Our main issue while classifying data was Class Imbalance. Our data had 22% loan defaulters whereas 78% were non-defaulters. For this, we made use of Class Weight parameters in our logistic regression model. We created dummy variables for our model and also run cross-validations. We performed hyperparameter tuning and tried multiple models for obtaining the best model based on AUC values.
-> Hyperparameter Used: Regularization Parameter and Elastic Net Parameter
+> Hyperparameter Used: Regularization Parameter and Elastic Net Parameter ; 
 > Evaluation Metrics: AUC Value
 
 **2. Random Forest:** Here, we made use of Stratified Sample by Majority downsampling to overcome our Class Imbalance problem. Again, we performed hyperparameter tuning and tried multiple models for obtaining the best model based on AUC values.
-> Hyperparameter Used: Maximum Depth, Number of Trees
+> Hyperparameter Used: Maximum Depth, Number of Trees ; 
 > Evaluation Metrics: AUC Value
 
 
